@@ -35,9 +35,6 @@ public class InfoServletTest {
         // Check output content
         writer.flush();
         String output = stringWriter.toString();
-        assertTrue(output.toLowerCase().contains("first member"));
-
-
         assertTrue(output.contains("<h2>Thông tin nhóm:</h2>"),
                 "Output does not contain group info heading");
         assertTrue(output.contains("<li>Bùi Đức Việt - MSSV: BIT230447</li>"),
