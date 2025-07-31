@@ -37,6 +37,8 @@ public class HelloServletTest {
         String output = stringWriter.toString();
         assertTrue(output.contains("<h1>Hello, World, I am a servlet, chú ý nhánh của Trần Huy Hoàng-29-07-2025</h1>"),
                 "Output does not contain expected heading");
+                assertTrue(output.contains("<h2>Alo alo</h2>"),
+                "Output does not contain expected heading");
         assertTrue(output.contains("<a href='http://localhost:8082/java-servlet-web-1.0-SNAPSHOT/'><button>Back to Home</button></a>"),
                 "Output does not contain back button");
     }
